@@ -90,3 +90,42 @@ section > .content {
 	background-color: black;
 	color: white;
 }
+
+/* favorite content 가로배열 */
+.favorite_wrapper_content {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.favorite_wrapper_content ul img {
+	max-width: 100%;
+	height: 300px;
+	width: 400px;
+}
+
+.favorite_wrapper_content ul.favorites {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+.favorite_wrapper_content ul li {
+	flex-basis: 33.333%;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+}
+
+.favorite_wrapper_content ul li .favorite_text {
+	text-align: center;
+	color: blue;
+	padding: 10px 60px;
+}
+
+.favorite_wrapper_content ul li .favorite_text .desc {
+	color: white;
+	font-size: 120%;
+	background-color: black;
