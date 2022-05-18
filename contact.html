@@ -11,28 +11,54 @@
 </head>
 
 <body>
-    <div class="hero">
-        <nav>
-            <h2 class="logo"> 3 개 월 이 끝 은 아 니 겠 죠 ❌</h2>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="favorite.html">Favorite</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="background">    
+        <div class="hero">
+            <nav>
+                <h2 class="logo"> 3 개 월 이 끝 은 아 니 겠 죠 ❌</h2>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="favorite.html">Favorite</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="wrapper_content">
+            <section>
+                <div class="about_content">
+                    <h2>연락처 : <span class="answer">010-9011-0390</span></h2>
+                    <h2>이메일 : <span class="answer">ooooo5h91@gmail.com</span></h2>
+                    <h2>블로그 : <a class="answer" href="https://i-c-a-n-d-o.tistory.com/" target="_blank">https://i-c-a-n-d-o.tistory.com/</a></h2>
+                    <h2>인스타 : <a class="answer" href="https://www.instagram.com/tralala__3n/" target="_blank">#tralala__3n </a></h2>
+                    <h2>깃허브 : <a class="answer" href="https://github.com/ooooo5h" target="_blank">https://github.com/ooooo5h </a></h2>
+                </div>
+            </section>
+        </div>
     </div>
 
-    <div class="wrapper_content">
-        <section>
-            <div class="about_content">
-                <h2>연락처 : <span class="answer">010-9011-0390</span></h2>
-                <h2>이메일 : <span class="answer">ooooo5h91@gmail.com</span></h2>
-                <h2>블로그 : <a class="answer" href="https://i-c-a-n-d-o.tistory.com/" target="_blank">https://i-c-a-n-d-o.tistory.com/</a></h2>
-                <h2>인스타 : <a class="answer" href="https://www.instagram.com/tralala__3n/" target="_blank">#tralala__3n </a></h2>
-                <h2>깃허브 : <a class="answer" href="https://github.com/ooooo5h" target="_blank">https://github.com/ooooo5h </a></h2>
-            </div>
-        </section>
-    </div>
+    <footer>
+        <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://wecode-w1.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    </footer>
+
 </body>
 </html>
