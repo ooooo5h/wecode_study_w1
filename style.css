@@ -127,6 +127,7 @@ section > .content {
 .favorite_wrapper_content ul li .favorite_text .desc {
 	color: white;
 	font-size: 120%;
+	margin: 0;
 	background-color: black;
 }
 
@@ -139,4 +140,4 @@ section > .content {
 	.about_wrapper_content {
 		font-size: 80%;
 	}
-}s
+}
