@@ -131,10 +131,6 @@ section > .content {
 	background-color: black;
 }
 
-#disqus_thread {
-	background-color: white;
-}
-
 .navbar__toogleBtn {
 	display: none;
 }
