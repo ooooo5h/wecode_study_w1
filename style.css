@@ -91,7 +91,7 @@ section > .content {
 }
 
 /* favorite content 가로배열 */
-.favorite_wrapper_content {
+/* .favorite_wrapper_content {
 	height: 100vh;
 	display: flex;
 	justify-content: center;
@@ -129,7 +129,23 @@ section > .content {
 	font-size: 120%;
 	margin: 0;
 	background-color: black;
+} */
+
+#grid {
+	border: 2px solid white;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr ;
+	width: 100%;
+	padding: 0;
 }
+
+#img {
+	border: 2px solid white;
+	padding: 00;
+	display: block;
+}
+
 
 .navbar__toogleBtn {
 	display: none;
