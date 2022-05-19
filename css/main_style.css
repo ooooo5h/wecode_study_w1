@@ -1,48 +1,67 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import url(reset.css);   
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+/* 토대가 되는 css 파일 */
+/* 배경, 폰트, navbar, content */
+
+* {
+	box-sizing: border-box;      /* 상자경계를 기준으로 사이징하겠다*/
+    font-family: 'Do Hyeon', sans-serif;
+} 
+
+/* !!!!! 배경 == 적용 안된다 !!!!! */
+/* body {
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;  
+} */
+
+:root {
+    --small-font-size : 20px;
+    --medium-font-size : 26px;
+    --large-font-size : 36px;
+    --super-large-font-size : 42px;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+
+/* 폰트 */
 body {
-	line-height: 1;
+    color: white;
+    font-size: 2rem;
+    padding: 30px;
 }
-ol, ul {
-	list-style: none;
+
+/* 내비게이션 바 */
+nav > ul > li {
+    display: inline-block;     /* 리스트 가로 배치 */
+    padding: 10px 30px;
+    font-size: var(--medium-font-size);
 }
-blockquote, q {
-	quotes: none;
+
+nav > ul > li > a {
+    color: white;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+
+.logo {
+    font-size: var(--super-large-font-size);
+}
+
+/* 메인 컨텐츠 */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+#body_wrapper > section > .main_content > a {
+    color: white;
 }

@@ -5,33 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>EUNHYUNG JEON</title>
-    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <script defer src="main.js"></script>
     <script src="https://kit.fontawesome.com/3688054cb0.js" crossorigin="anonymous"></script>
     <style> 
         @import url(css/main_style.css);
+        
+        body {
+            background-image: url(img/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            background-position: center center;  /*배경이미지 위치 정중앙*/
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="navbar_wrapper_content">
-        <nav>
-            <ul class="navbar__menu">
+    <div id="body_wrapper">
+        <!-- 상단 메뉴바 -->
+        <nav class="navbar_wrapper_content">
+            <h2 class="logo"></h2>
+            <ul class="navbar_menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="favorite.html">Favorite</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
         </nav>
-    </div>
+        <!-- 상단 메뉴바 끝 -->
 
-    <div class="wrapper_content">
-        <section>
+        <!-- 중간 컨텐츠 부분 -->
+        <section class="section">
             <div class="main_content">
                 <h2>print(<span class="blink">"Hello 35th Wecoder"</span>)</h2>
             </div>
         </section>
+        <!-- 중간 컨텐츠 부분 끝 -->
+
     </div>
 </body>
 </html>

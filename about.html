@@ -5,14 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>EUNHYUNG JEON</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3688054cb0.js" crossorigin="anonymous"></script>
+    <style> 
+        @import url(css/main_style.css);
+        body {
+            background-image: url(img/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            background-position: center center;  /*배경이미지 위치 정중앙*/
+        }
+    </style>
 </head>
 
 <body>
-    <div class="navbar_wrapper_content">
-        <nav>
+    <div id="body_wrapper">
+        
+        <!-- 상단 메뉴바 -->
+        <nav class="navbar_wrapper_content">
             <h2 class="logo"> 반 가 워 요 💚 3 5 기 💚</h2>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,11 +33,11 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </div>
+        <!-- 상단 메뉴바 끝 -->
 
-    <div class="about_wrapper_content">
-        <section>
-            <div class="about_content">
+        <!-- 중간 컨텐츠 부분 -->
+        <section class="section">
+            <div class="main_content">
                 <h2>이름 : <span class="answer">전은형</span></h2>
                 <h2>사는 곳 : <span class="answer">서울 중랑구</span></h2>
                 <h2>MBTI : <span class="answer">ENFJ</span></h2>
@@ -35,6 +47,8 @@
                 <h2>올해 목표 : <span class="answer">(우리 모두) '개발자'로 취직합시다!!</span></h2>
             </div>
         </section>
+        <!-- 중간 컨텐츠 부분 끝 -->
+
     </div>
 </body>
 </html>

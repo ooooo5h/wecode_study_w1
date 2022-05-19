@@ -8,33 +8,45 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3688054cb0.js" crossorigin="anonymous"></script>
+    <style>
+        @import url(css/main_style.css);
+        body {
+            background-image: url(img/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            background-position: center center;  /*배경이미지 위치 정중앙*/
+        }
+    </style>
 </head>
 
 <body>
-    <div class="navbar_wrapper_content">    
-        <div class="hero">
-            <nav>
-                <h2 class="logo"> 3 개 월 이 끝 은 아 니 겠 죠 ❌</h2>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="favorite.html">Favorite</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+    <div id="body_wrapper">
 
-        <div class="wrapper_content">
-            <section>
-                <div class="about_content">
-                    <h2>연락처 : <span class="answer">010-9011-0390</span></h2>
-                    <h2>이메일 : <span class="answer">ooooo5h91@gmail.com</span></h2>
-                    <h2>블로그 : <a class="answer" href="https://i-c-a-n-d-o.tistory.com/" target="_blank">https://i-c-a-n-d-o.tistory.com/</a></h2>
-                    <h2>인스타 : <a class="answer" href="https://www.instagram.com/tralala__3n/" target="_blank">#tralala__3n </a></h2>
-                    <h2>깃허브 : <a class="answer" href="https://github.com/ooooo5h" target="_blank">https://github.com/ooooo5h </a></h2>
-                </div>
-            </section>
-        </div>
+        <!-- 상단 메뉴바 -->
+        <nav class="navbar_wrapper_content">
+            <h2 class="logo"> 3 개 월 이 끝 은 아 니 겠 죠 ❌</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="favorite.html">Favorite</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- 상단 메뉴바 끝 -->
+
+        <!-- 중간 컨텐츠 부분 -->
+        <section class="section">
+            <div class="main_content">
+                <a href="https://www.instagram.com/tralala__3n/" target="_blank"><i class="fa-brands fa-instagram"></i> 인스타그램 : #tralala__3n</a><br>
+                <a href="mailto: ooooo5h91@gmail.com?subject=안녕하세요 은형님 000이 궁금합니다."><i class="fa-solid fa-envelope"></i> ooooo5h91@gmail.com</a><br>
+                <a href="https://github.com/ooooo5h" target="_blank"><i class="fa-brands fa-github"></i> https://github.com/ooooo5h</a><br>
+                <a href="https://i-c-a-n-d-o.tistory.com/" target="_blank"><i class="fa-solid fa-blog"></i> https://i-c-a-n-d-o.tistory.com</a><br>
+            </div>
+        </section>
+        <!-- 중간 컨텐츠 부분 끝 -->
+        
     </div>
 
     <!--Start of Tawk.to Script-->

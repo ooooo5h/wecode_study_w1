@@ -5,14 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>EUNHYUNG JEON</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3688054cb0.js" crossorigin="anonymous"></script>
+    <style> 
+        @import url(css/main_style.css);
+        body {
+            background-image: url(img/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            background-position: center center;  /*배경이미지 위치 정중앙*/
+        }
+    </style>
 </head>
 
 <body>
-    <div class="navbar_wrapper_content">
-        <nav>
+    <div id="body_wrapper">
+        
+        <!-- 상단 메뉴바 -->
+        <nav class="navbar_wrapper_content">
             <h2 class="logo"> 좋 아 하 는 것 들 🧡</h2>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,18 +32,21 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </div>
+        <!-- 상단 메뉴바 끝 -->
 
-    <div class="favorite_container">
-        <img src="img/animation.jpg" alt="">
-        <img src="img/bubbletea.jpg" alt="">
-        <img src="img/suga.JPG" alt="">
-        <img src="img/marvel2.jpg" alt="">
-        <img src="img/soju.jpg" alt="">
-        <img src="img/travel.jpg" alt="">
-        <img src="img/beer.jpg" alt="">
-        <img src="img/shopping.jpg" alt="">
+        <!-- 중간 컨텐츠 부분 -->
+        <section class="section">
+            <div class="main_content">
+                <img src="img/animation.jpg" alt="" width="100%">
+                <img src="img/bubbletea.jpg" alt="" width="100%">
+                <img src="img/suga.JPG" alt="" width="100%">
+                <img src="img/marvel2.jpg" alt="" width="100%">
+                <img src="img/soju.jpg" alt="" width="100%">
+                <img src="img/travel.jpg" alt="" width="100%">
+                <img src="img/beer.jpg" alt="" width="100%">
+                <img src="img/shopping.jpg" alt="" width="100%">
+            </div>
+        </section>
     </div>
-
 </body>
 </html>
