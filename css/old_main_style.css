@@ -16,7 +16,7 @@ body {
 
 nav {
 	display: flex;
-	align-items: center;
+	align-items: cenPter;
 	justify-content: space-between;
 	padding: 20px 24px;
 }
@@ -56,6 +56,7 @@ section > .content {
 	justify-content: center;
 	align-items: center;
 }
+
 
 .main_content {
 	display: inline-block;
