@@ -1,3 +1,11 @@
 section > .main_content {
     font-size: 2.5rem;
 }
+
+section > .main_content > .contact {
+    padding: 20px;
+}
+
+section > .main_content > .contact > a {
+    color: white;
+}
