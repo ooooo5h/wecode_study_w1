@@ -9,3 +9,7 @@
 .blink { 
 	animation: blink-effect 0.8s step-end infinite;
 }
+
+section > .main_content {
+    font-size: 5rem;
+}
