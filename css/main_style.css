@@ -25,7 +25,7 @@
     --super-large-font-size : 42px;
 }
 
-/* 폰트 */
+/* 폰트 색상 및 사이즈 */
 body {
     color: white;
     font-size: 2rem;
@@ -41,6 +41,8 @@ nav > ul > li {
 
 nav > ul > li > a {
     color: white;
+    padding: 10px;
+    font-weight: bold;    /*두껍게 처리*/
 }
 
 nav {
@@ -50,9 +52,15 @@ nav {
     justify-content: space-between;
 }
 
+.navbar_menu > li > a:hover {
+    color: blue;
+}
+
+/* 왼쪽 로고 */
 .logo {
     font-size: var(--super-large-font-size);
 }
+
 
 /* 메인 컨텐츠 */
 .section {
