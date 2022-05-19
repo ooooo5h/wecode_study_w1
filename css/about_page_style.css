@@ -1,7 +1,11 @@
 section > .main_content {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 section > .main_content > .about {
     padding: 20px;
+}
+
+section > .main_content > .about > .answer {
+    background: black;
 }
