@@ -9,3 +9,27 @@ section > .main_content > .contact {
 section > .main_content > .contact > a {
     color: white;
 }
+
+/* 좌우 왔다갔다 애니메이션 */
+@keyframes 왔다갔다 {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+/* hover */
+section > .main_content > .contact:hover {
+    animation-name: 왔다갔다;
+    animation-duration: 0.7s ;
+    animation-iteration-count: infinite;
+    background: black;
+    border-radius: 300px;
+}
