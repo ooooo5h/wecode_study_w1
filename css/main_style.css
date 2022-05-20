@@ -29,7 +29,6 @@
 body {
     color: white;
     font-size: 2rem;
-    padding: 30px;
 }
 
 /* 내비게이션 바 */
@@ -50,6 +49,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .navbar_menu > li > a:hover {
@@ -63,6 +63,10 @@ nav {
 
 
 /* 메인 컨텐츠 */
+.section > .main_content {
+    height: 884px;
+}
+
 .section {
     display: flex;
     justify-content: center;
@@ -73,3 +77,4 @@ nav {
 #body_wrapper > section > .main_content > a {
     color: white;
 }
+
