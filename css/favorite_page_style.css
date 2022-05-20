@@ -6,6 +6,15 @@ section > .main_content > .about {
     padding: 20px;
 }
 
+section > .main_content > .item > p.item_title {
+    font-size: 1.5rem;
+}
+
+section > .main_content > .item > p.item_content {
+    font-size: 1.3rem;
+}
+
+
 /* 부모태그에 grid 적용 */
 section > .main_content {
     display: grid;
