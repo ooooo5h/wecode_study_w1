@@ -9,14 +9,14 @@
 } 
 
 /* !!!!! 배경 == 적용 안된다 !!!!! */
-/* body {
-    background-image: url(img/background.jpg);
+body {
+    background-image: url(/img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
     background-position: center center;  
-} */
+}
 
 :root {
     --small-font-size : 20px;
