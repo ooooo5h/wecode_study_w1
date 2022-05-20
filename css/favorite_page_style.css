@@ -6,14 +6,6 @@ section > .main_content > .about {
     padding: 20px;
 }
 
-section > .main_content > .item > p.item_title {
-    font-size: 1.5rem;
-}
-
-section > .main_content > .item > p.item_content {
-    font-size: 1.3rem;
-}
-
 /* 각각 다른 사이즈의 이미지들 크기 조정 */
 section > .main_content > .item > .img_wrapper {
     display: flex;
@@ -23,8 +15,8 @@ section > .main_content > .item > .img_wrapper {
 }
 
 section > .main_content > .item > .img_wrapper >.img {
-    height: 380px;
-    width: 480px;
+    height: 330px;
+    width: 420px;
     object-fit: cover;   /*이미지 늘어나지 않게.*/
     object-position: center center;
     border-radius: 50px;
@@ -35,5 +27,41 @@ section > .main_content {
     display: grid;
     /* grid-template-columns: 25% 25% 25% 25%;   콜롬세로 몇개 템플릿? */
     grid-template-columns: repeat(3, 1fr);   /* gap 간격을 같이 쓸 때는 %보다 fr를 쓰는 게 사이즈에 맞다.*/
-    gap: 30px;
+    gap: 20px;
+}
+
+/* 이미지 타이틀 가운데 배치 */
+section > .main_content > .item > .img_title {
+    text-align: center;
+    width: 420px;
+    font-size: 1.5rem; 
+}
+
+/* 이미지 내용 가운데 배치 */
+section > .main_content > .item > .img_content {
+    text-align: center;
+    width: 420px;
+    font-size: 1.3rem;
+    background-color: black;
+    border-radius: 40px;
+}
+
+/* 이미지의 타이틀, 내용을 전체 div 가운데 배치 */
+section > .main_content > .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;    /*움찔효과*/
+    top: 0;                /*움찔효과*/
+    transition: 0.3s;      /*움찔효과*/
+}
+
+section > .main_content > .item:hover {
+    top: -8px;             /*움찔효과*/
+}
+
+/* 이미지, 제목, 내용 내부 여백 */
+section > .main_content > .item > .img_wrapper, .img_content, .img_title {
+    padding: 6px;
 }
