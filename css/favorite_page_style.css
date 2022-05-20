@@ -26,9 +26,25 @@ section > .main_content > .item > .img_wrapper >.img {
 section > .main_content {
     display: grid;
     /* grid-template-columns: 25% 25% 25% 25%;   콜롬세로 몇개 템플릿? */
-    grid-template-columns: repeat(3, 1fr);   /* gap 간격을 같이 쓸 때는 %보다 fr를 쓰는 게 사이즈에 맞다.*/
+    grid-template-columns: 1fr;
     gap: 20px;
 }
+
+
+/* 반응형 */
+@media screen and (min-width: 980px) {
+    .section > .main_content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width : 1368px) {
+    .section > .main_content {
+        grid-template-columns: repeat(3, 1fr);
+    } 
+} 
+
 
 /* 이미지 타이틀 가운데 배치 */
 section > .main_content > .item > .img_title {
