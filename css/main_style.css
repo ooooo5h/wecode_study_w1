@@ -61,8 +61,13 @@ nav {
     font-size: var(--super-large-font-size);
 }
 
+/* 메인 컨텐츠 가운데로 배치*/
+section > .main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-/* 메인 컨텐츠 */
 .section > .main_content {
     height: 884px;
 }
