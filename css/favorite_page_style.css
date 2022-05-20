@@ -14,11 +14,19 @@ section > .main_content > .item > p.item_content {
     font-size: 1.3rem;
 }
 
+/* 각각 다른 사이즈의 이미지들 크기 조정 */
+section > .main_content > .item > .img {
+    height: 380px;
+    width: 480px;
+    object-fit: cover;   /*이미지 늘어나지 않게.*/
+    object-position: center center;
+    border-radius: 50px;
+}
 
 /* 부모태그에 grid 적용 */
 section > .main_content {
     display: grid;
     /* grid-template-columns: 25% 25% 25% 25%;   콜롬세로 몇개 템플릿? */
     grid-template-columns: repeat(3, 1fr);   /* gap 간격을 같이 쓸 때는 %보다 fr를 쓰는 게 사이즈에 맞다.*/
-    gap: 20px;
+    gap: 30px;
 }
