@@ -5,3 +5,11 @@ section > .main_content {
 section > .main_content > .about {
     padding: 20px;
 }
+
+/* 부모태그에 grid 적용 */
+section > .main_content {
+    display: grid;
+    /* grid-template-columns: 25% 25% 25% 25%;   콜롬세로 몇개 템플릿? */
+    grid-template-columns: 1fr 1fr 1fr 1fr;   /* gap 간격을 같이 쓸 때는 %보다 fr를 쓰는 게 사이즈에 맞다.*/
+    gap: 20px;
+}
