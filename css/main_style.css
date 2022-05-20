@@ -5,7 +5,7 @@
 
 * {
 	box-sizing: border-box;      /* 상자경계를 기준으로 사이징하겠다*/
-    /* font-family: 'Jua', sans-serif; */
+
 } 
 
 /* !!!!! 배경 == 적용 안된다 !!!!! */
@@ -28,19 +28,19 @@ body {
 /* 폰트 색상 및 사이즈 */
 body {
     color: white;
-    font-size: 2rem;
+    font-size: rem;
 }
 
 /* 내비게이션 바 */
 nav > ul > li {
     display: inline-block;     /* 리스트 가로 배치 */
-    padding: 5px 15px;
+    padding: 5px 13px;
     font-size: var(--small-font-size);
 }
 
 nav > ul > li > a {
     color: white;
-    padding: 10px;
+    padding: 5px;
     font-weight: bold;    /*두껍게 처리*/
 }
 
@@ -58,7 +58,7 @@ nav {
 
 /* 왼쪽 로고 */
 .logo {
-    font-size: var(--large-font-size);
+    font-size: var(--medium-font-size);
 }
 
 /* 왼쪽 로고 가운데에 배치 */
@@ -86,9 +86,9 @@ section > .main_content {
 }
 
 /* 반응형 */
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1380px) {
     nav > ul > li {
-        font-size: var(--medium-font-size);
+        font-size: var(--large-font-size);
         padding: 10px 30px;
     }
 
@@ -101,4 +101,7 @@ section > .main_content {
         font-size: var(--super-large-font-size);
     }
 
+    nav > ul > li > a {
+        padding: 10px;
+    }
 }
