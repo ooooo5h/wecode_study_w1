@@ -15,7 +15,14 @@ section > .main_content > .item > p.item_content {
 }
 
 /* 각각 다른 사이즈의 이미지들 크기 조정 */
-section > .main_content > .item > .img {
+section > .main_content > .item > .img_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section > .main_content > .item > .img_wrapper >.img {
     height: 380px;
     width: 480px;
     object-fit: cover;   /*이미지 늘어나지 않게.*/
