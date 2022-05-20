@@ -34,8 +34,8 @@ body {
 /* 내비게이션 바 */
 nav > ul > li {
     display: inline-block;     /* 리스트 가로 배치 */
-    padding: 10px 30px;
-    font-size: var(--medium-font-size);
+    padding: 5px 15px;
+    font-size: var(--small-font-size);
 }
 
 nav > ul > li > a {
@@ -58,7 +58,13 @@ nav {
 
 /* 왼쪽 로고 */
 .logo {
-    font-size: var(--super-large-font-size);
+    font-size: var(--large-font-size);
+}
+
+/* 왼쪽 로고 가운데에 배치 */
+#body_wrapper > .navbar_wrapper_content {
+    display: flex;
+    flex-direction: column;
 }
 
 /* 메인 컨텐츠 가운데로 배치*/
@@ -79,7 +85,20 @@ section > .main_content {
     height: 90vh;
 }
 
-#body_wrapper > section > .main_content > a {
-    color: white;
-}
+/* 반응형 */
+@media screen and (min-width: 1300px) {
+    nav > ul > li {
+        font-size: var(--medium-font-size);
+        padding: 10px 30px;
+    }
 
+    #body_wrapper > .navbar_wrapper_content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo {
+        font-size: var(--super-large-font-size);
+    }
+
+}
