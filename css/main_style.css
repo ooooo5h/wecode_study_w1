@@ -112,4 +112,8 @@ h2 {
     h2 {
         font-size: 5.5rem;
     }
+
+    .main_content > .contact {
+        font-size: 2.5rem;
+    }
 }
