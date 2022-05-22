@@ -6,10 +6,6 @@ section > .main_content {
     font-size: 2.2rem;
 }
 
-section > .main_content > .about {
-    padding: 20px;
-}
-
 /* 각각 다른 사이즈의 이미지들 크기 조정 */
 section > .main_content > .item > .img_wrapper {
     display: flex;
@@ -21,7 +17,7 @@ section > .main_content > .item > .img_wrapper {
 section > .main_content > .item > .img_wrapper >.img {
     height: 330px;
     width: 420px;
-    object-fit: cover;   /*이미지 늘어나지 않게.*/
+    object-fit: cover;     /*이미지 늘어나지 않게*/
     object-position: center center;
     border-radius: 50px;
 }
@@ -30,7 +26,7 @@ section > .main_content > .item > .img_wrapper >.img {
 section > .main_content {
     display: grid;
     /* grid-template-columns: 25% 25% 25% 25%;   콜롬세로 몇개 템플릿? */
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     gap: 20px;
 }
 
@@ -58,14 +54,6 @@ section > .main_content {
     }
 } 
 
-
-/* 이미지 타이틀 가운데 배치 */
-section > .main_content > .item > .img_title {
-    text-align: center;
-    width: 420px;
-    font-size: 1.5rem; 
-}
-
 /* 이미지 내용 가운데 배치 */
 section > .main_content > .item > .img_content {
     text-align: center;
@@ -91,6 +79,6 @@ section > .main_content > .item:hover {
 }
 
 /* 이미지, 제목, 내용 내부 여백 */
-section > .main_content > .item > .img_wrapper, .img_content, .img_title {
+section > .main_content > .item > .img_wrapper, .img_content {
     padding: 6px;
 }
