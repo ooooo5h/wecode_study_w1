@@ -71,7 +71,7 @@ section > .main_content > .item {
     align-items: center;
     position: relative;    /*움찔효과*/
     top: 0;                /*움찔효과*/
-    transition: 0.3s;      /*움찔효과*/
+    transition: 0.3s;      /*움찔효과 => 속성의 변화가 일정기간에 걸쳐 일어나라*/
 }
 
 section > .main_content > .item:hover {
