@@ -3,7 +3,6 @@
 
 * {
 	box-sizing: border-box;      /* 상자경계를 기준으로 사이징하겠다*/
-    
 } 
 
 body {
@@ -39,14 +38,15 @@ nav > ul > li > a {
     color: white;
     padding: 5px;
     font-weight: bold;    /*두껍게 처리*/
+    text-decoration: none;  /*a태그 밑줄 제거*/
 }
 
-nav {
+.navbar_wrapper_content {
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
 }
 
 .navbar_menu > li > a:hover {
@@ -56,6 +56,7 @@ nav {
 /* 왼쪽 로고 */
 .logo {
     font-size: var(--medium-font-size);
+    margin: 0;
 }
 
 /* 왼쪽 로고 가운데에 배치 */
@@ -84,6 +85,11 @@ section > .main_content {
 
 h2 {
     font-size: 2.5rem;
+}
+
+.navbar_menu {
+    margin: 0;
+    padding: 0;
 }
 
 /* 반응형 */
