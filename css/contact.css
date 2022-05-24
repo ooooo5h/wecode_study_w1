@@ -1,12 +1,12 @@
-section > .main_content {
+section .main_content {
     font-size: 1.6rem;
 }
 
-section > .main_content > .contact {
+section .main_content .contact {
     padding: 20px;
 }
 
-section > .main_content > .contact > a {
+section .main_content .contact a {
     color: white;
 }
 
@@ -26,7 +26,7 @@ section > .main_content > .contact > a {
 }
 
 /* hover */
-section > .main_content > .contact:hover {
+section .main_content .contact:hover {
     animation-name: 왔다갔다;
     animation-duration: 0.7s ;
     animation-iteration-count: infinite;

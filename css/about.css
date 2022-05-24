@@ -1,17 +1,17 @@
-section > .main_content {
+section .main_content {
     font-size: 1.2rem;
 }
 
-section > .main_content > .about {
+section .main_content .about {
     padding: 20px;
 }
 
-section > .main_content > .about > .answer {
+section .main_content .about .answer {
     background: black;
 }
 
 @media screen and (min-width: 1380px) {
-    section > .main_content {
+    section .main_content {
         font-size: 2.2rem;
     }
 }

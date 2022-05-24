@@ -2,19 +2,19 @@ body {
     background: #4ca3cc;
 }
 
-section > .main_content {
+section .main_content {
     font-size: 2.2rem;
 }
 
 /* 각각 다른 사이즈의 이미지들 크기 조정 */
-section > .main_content > .item > .img_wrapper {
+section .main_content .item .img_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-section > .main_content > .item > .img_wrapper >.img {
+section .main_content .item .img_wrapper .img {
     height: 330px;
     width: 420px;
     object-fit: cover;     /*이미지 늘어나지 않게*/
@@ -23,7 +23,7 @@ section > .main_content > .item > .img_wrapper >.img {
 }
 
 /* 부모태그에 grid 적용 */
-section > .main_content {
+section .main_content {
     display: grid;
     /* grid-template-columns: 25% 25% 25% 25%;   콜롬세로 몇개 템플릿? */
     /* grid-template-columns: 1fr; */
@@ -33,14 +33,14 @@ section > .main_content {
 
 /* 반응형 */
 @media screen and (min-width: 980px) {
-    .section > .main_content {
+    .section .main_content {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 
 @media screen and (min-width : 1368px) {
-    .section > .main_content {
+    .section .main_content {
         grid-template-columns: repeat(3, 1fr);
     } 
 
@@ -55,7 +55,7 @@ section > .main_content {
 } 
 
 /* 이미지 내용 가운데 배치 */
-section > .main_content > .item > .img_content {
+section .main_content .item .img_content {
     text-align: center;
     width: 420px;
     font-size: 1.3rem;
@@ -64,7 +64,7 @@ section > .main_content > .item > .img_content {
 }
 
 /* 이미지의 타이틀, 내용을 전체 div 가운데 배치 */
-section > .main_content > .item {
+section .main_content .item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -74,11 +74,11 @@ section > .main_content > .item {
     transition: 0.3s;      /*움찔효과 => 속성의 변화가 일정기간에 걸쳐 일어나라*/
 }
 
-section > .main_content > .item:hover {
+section .main_content .item:hover {
     top: -8px;             /*움찔효과*/
 }
 
 /* 이미지, 제목, 내용 내부 여백 */
-section > .main_content > .item > .img_wrapper, .img_content {
+section .main_content .item .img_wrapper, .img_content {
     padding: 6px;
 }

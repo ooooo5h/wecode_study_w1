@@ -28,13 +28,13 @@ body {
 }
 
 /* 내비게이션 바 */
-nav > ul > li {
+nav ul li {
     display: inline-block;     /* 리스트 가로 배치 */
     padding: 5px 13px;
     font-size: var(--small-font-size);
 }
 
-nav > ul > li > a {
+nav ul li a {
     color: white;
     padding: 5px;
     font-weight: bold;    /*두껍게 처리*/
@@ -49,7 +49,7 @@ nav > ul > li > a {
     padding: 10px;
 }
 
-.navbar_menu > li > a:hover {
+.navbar_menu li a:hover {
     color: blue;
 }
 
@@ -60,19 +60,19 @@ nav > ul > li > a {
 }
 
 /* 왼쪽 로고 가운데에 배치 */
-#body_wrapper > .navbar_wrapper_content {
+#body_wrapper .navbar_wrapper_content {
     display: flex;
     flex-direction: column;
 }
 
 /* 메인 컨텐츠 가운데로 배치*/
-section > .main_content {
+section .main_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.section > .main_content {
+.section .main_content {
     height: 884px;
 }
 
@@ -94,12 +94,12 @@ h2 {
 
 /* 반응형 */
 @media screen and (min-width: 1380px) {
-    nav > ul > li {
+    nav ul li {
         font-size: var(--large-font-size);
         padding: 10px 30px;
     }
 
-    #body_wrapper > .navbar_wrapper_content {
+    #body_wrapper .navbar_wrapper_content {
         display: flex;
         flex-direction: row;
     }
@@ -108,7 +108,7 @@ h2 {
         font-size: var(--super-large-font-size);
     }
 
-    nav > ul > li > a {
+    nav ul li a {
         padding: 10px;
     }
 
@@ -116,7 +116,7 @@ h2 {
         font-size: 5.5rem;
     }
 
-    .main_content > .contact {
+    .main_content .contact {
         font-size: 2.5rem;
     }
 }
