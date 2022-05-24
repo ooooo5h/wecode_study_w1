@@ -3,6 +3,7 @@
 
 * {
 	box-sizing: border-box;      /* 상자경계를 기준으로 사이징하겠다*/
+    font-family: 'Jua', sans-serif;
 } 
 
 body {
@@ -12,7 +13,6 @@ body {
     height: 100vh;
     width: 100vw;
     background-position: center center;  
-    font-family: 'Jua', sans-serif;
 }
 
 :root {
@@ -79,7 +79,6 @@ section .main_content {
 .section {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 90vh;
 }
 
@@ -116,7 +115,5 @@ h2 {
         font-size: 5.5rem;
     }
 
-    .main_content .contact {
-        font-size: 2.5rem;
-    }
+
 }

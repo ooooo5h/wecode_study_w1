@@ -1,17 +1,32 @@
 section .main_content {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 section .main_content .about {
-    padding: 20px;
+    padding: 10px;
 }
 
 section .main_content .about .answer {
     background: black;
 }
 
+/* 반응형 */
+@media screen and (min-width: 980px) {
+    section .main_content {
+        font-size: 2rem;
+    }
+
+    section .main_content .about {
+        padding: 8px;
+    }
+}
+
 @media screen and (min-width: 1380px) {
     section .main_content {
-        font-size: 2.2rem;
+        font-size: 2.6rem;
+    }
+
+    section .main_content .about {
+        padding: 3px;
     }
 }

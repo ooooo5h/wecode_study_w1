@@ -38,13 +38,13 @@ section .main_content {
     }
 }
 
-
 @media screen and (min-width : 1368px) {
     .section .main_content {
         grid-template-columns: repeat(3, 1fr);
     } 
 
     body {
+        background: none;
         background-image: url(../img/background.jpg);
         background-repeat: no-repeat;
         background-size: cover;

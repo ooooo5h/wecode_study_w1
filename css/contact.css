@@ -1,5 +1,5 @@
 section .main_content {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 section .main_content .contact {
@@ -34,3 +34,9 @@ section .main_content .contact:hover {
     border-radius: 300px;
 }
 
+/* 반응형 */
+@media screen and (min-width: 1380px) {
+    .main_content .contact {
+        font-size: 2.7rem;
+    }
+}
