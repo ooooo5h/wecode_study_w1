@@ -13,6 +13,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-position: center center;  
+    color: white;
 }
 
 :root {
@@ -20,11 +21,6 @@ body {
     --medium-font-size : 26px;
     --large-font-size : 36px;
     --super-large-font-size : 42px;
-}
-
-/* 폰트 색상 및 사이즈 */
-body {
-    color: white;
 }
 
 /* 내비게이션 바 */
